@@ -1,0 +1,68 @@
+// Styling for the contact section
+
+.title-salmon {
+    color: $black;
+    // background-color: #FF5756 !important;
+}
+
+section#contact {
+    background-color: #000;
+    background-image: url("../assets/img/v/tablet.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 750px;
+
+    form#contactForm {
+        .form-group {
+            margin-bottom: $grid-gutter-width;
+            input,
+            textarea {
+                padding: 1.25rem;
+            }
+            input.form-control {
+                height: auto;
+            }
+        }
+        .form-group-textarea {
+            height: 100%;
+            textarea {
+                height: 100%;
+                min-height: 10rem;
+            }
+        }
+        p.help-block {
+            margin: 0;
+        }
+        .form-control:focus {
+            border-color: $primary;
+            box-shadow: none;
+        }
+        ::-webkit-input-placeholder {
+            font-family: $headings-font-family;
+            font-weight: $headings-font-weight;
+            color: $gray-400;
+        }
+        :-moz-placeholder {
+            font-family: $headings-font-family;
+            font-weight: $headings-font-weight;
+            color: $gray-400;
+        }
+        ::-moz-placeholder {
+            font-family: $headings-font-family;
+            font-weight: $headings-font-weight;
+            color: $gray-400;
+        }
+        :-ms-input-placeholder {
+            font-family: $headings-font-family;
+            font-weight: $headings-font-weight;
+            color: $gray-400;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    section#contact {
+        height: 950px !important;
+    }
+}
+

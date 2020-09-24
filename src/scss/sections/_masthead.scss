@@ -1,0 +1,114 @@
+// Styling for the masthead
+#mainNav .container {
+    // background-color: rgba(196, 185, 185, 0.68);
+    border-radius: 10px;
+}
+
+#services {
+    background-color: white;
+    background-image: url("../assets/img/v/bkgWeAre.jpg");
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: top center;
+    background-size: contain;
+    // background-attachment: fixed;
+}
+
+header.masthead {
+    // padding-top: 9rem;
+    padding-bottom: rem;
+    text-align: center;
+    min-height: 580px;
+    color: $white;
+    background-color: black;
+    background-image: url("../assets/img/v/bkgHeader.jpg");
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: center center;
+    background-size: cover;
+    // -webkit-filter: blur(3px);
+    // -moz-filter: blur(3px);
+    // -o-filter: blur(3px);
+    // -ms-filter: blur(3px);
+    // filter: blur(3px);
+    .masthead-subheading {
+        font-size: 1.5rem;
+        font-style: italic;
+        line-height: 1.5rem;
+        margin-bottom: 25px;
+        font-family: $subheadings-font-family;
+        text-shadow: 0 2px 1px #747474,
+                    -1px 3px 1px #767676,
+                    -2px 5px 1px #787878,
+                    -3px 7px 1px #7a7a7a,
+                    -4px 9px 1px #7f7f7f
+    }
+    .masthead-heading {
+        font-size: 3.25rem;
+        font-weight: 700;
+        line-height: 3.25rem;
+        margin-bottom: 2rem;
+        font-family: $headings-font-family;
+
+    }
+    .masthead-logo  {
+        padding-top: 150px;
+        .logo {
+            background-repeat: no-repeat;
+            background-attachment: scroll;
+            background-position: center center;
+            // height: 600px;
+            width: 70%;
+            background-size: 600px;
+            animation: App-logo-spin infinite 20s linear;
+        }
+    }
+    a {
+        margin-top: 50px;
+    }
+}
+
+@keyframes App-logo-spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+
+
+@include media-breakpoint-up(md) {
+    header.masthead {
+        .masthead-logo  {
+            // padding-top: 150px;
+            .logo {
+                background-repeat: no-repeat;
+                background-attachment: scroll;
+                background-position: center center;
+                // height: 600px;
+                width: 50%;
+                background-size: 600px;
+                animation: App-logo-spin infinite 20s linear;
+            }
+        }
+        // padding-top: 12.5rem + 4.5rem;
+        padding-top: 2.5rem;
+        padding-bottom: 7.5rem;
+        .masthead-subheading {
+            font-size: 2.25rem;
+            font-style: italic;
+            line-height: 2.25rem;
+            margin-bottom: 2rem;
+        }
+        .masthead-heading {
+            font-size: 4.5rem;
+            font-weight: 700;
+            line-height: 4.5rem;
+            margin-bottom: 4rem;
+        }
+        a {
+            margin-top: 100px;
+        }
+    }
+}

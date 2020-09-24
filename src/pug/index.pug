@@ -1,0 +1,584 @@
+doctype html
+html(lang='en')
+
+    head
+
+        meta(charset='utf-8')
+        meta(name='viewport', content='width=device-width, initial-scale=1, shrink-to-fit=no')
+        meta(name='description', content='')
+        meta(name='author', content='')
+
+        title Lievito Pizza
+
+        link(rel='icon', type='image/x-icon', href='assets/img/favicon.ico')
+
+        // Font Awesome icons (free version)
+        script(async, defer, src='https://use.fontawesome.com/releases/v5.13.0/js/all.js', crossorigin='anonymous')
+
+        // Google fonts
+        link(href='https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap', rel='stylesheet', type='text/css')
+        link(href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic&display=swap', rel='stylesheet', type='text/css')
+        link(href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700&display=swap', rel='stylesheet', type='text/css')
+
+        // Core theme CSS (includes Bootstrap)
+        link(href='css/styles.css', rel='stylesheet')
+
+        script(src='js/lazysizes.min.js', async)
+
+    body#page-top
+
+        // Navigation
+        nav#mainNav.navbar.navbar-expand-lg.navbar-dark.fixed-top
+            .container
+                a.navbar-brand.js-scroll-trigger(href='#page-top')
+                    img(src='assets/img/v/logo-small-head.png', alt='')
+                button.navbar-toggler.navbar-toggler-right(type='button', data-toggle='collapse', data-target='#navbarResponsive', aria-controls='navbarResponsive', aria-expanded='false', aria-label='Toggle navigation')
+                    | Menú
+                    i.fas.fa-bars.ml-1
+                #navbarResponsive.collapse.navbar-collapse
+                    ul.navbar-nav.text-uppercase.ml-auto
+                        li.nav-item
+                            a.nav-link.js-scroll-trigger(href='#services') Quiénes somos
+                        li.nav-item
+                            a.nav-link.js-scroll-trigger(href='#portfolio') Servicios
+                        li.nav-item
+                            a.nav-link.js-scroll-trigger(href='#about') Menú
+                        //- li.nav-item
+                        //-     a.nav-link.js-scroll-trigger(href='#team') Equipo
+                        li.nav-item
+                            a.nav-link.js-scroll-trigger(href='#contact') Contacto
+                        li.nav-item
+                            a.nav-link.js-scroll-trigger(href='#findus') Encuéntranos
+
+        // Masthead
+        header.masthead
+            .container
+                //- .masthead-subheading Lievito Pizza
+                .masthead-logo
+                    img.logo(data-src='assets/img/v/logo-lievito-white.png', class="lazyload", alt='')
+                //- .masthead-heading.text-uppercase It's Nice To Meet You
+                a.btn.btn-primary.btn-xl.text-uppercase.js-scroll-trigger(href='#services') Conócenos
+
+        // Quiénes Somos
+        section#services.page-section
+            .container
+                .text-center
+                    h2.section-heading.text-uppercase Quiénes Somos
+
+                    h3.section-subheading.text-muted.
+                                                        Todo comenzó con un “Quiero pizza” y de compartir ese gusto por la cocina con nuestros familiares y amigos.
+                                                        Poco a poco hemos crecido; ahora ofrecemos a nuestros clientes una experiencia única de sabores a través de pizzas elaboradas con masas de fermentación natural que hace de nuestro producto un deleite para el paladar.
+                                                        <br><br>Las pizzas de LIEVITO son realizadas con mucha pasión e ilusión, para aquellas personas que les gusta comer y disfrutar cada bocado de la vida…
+                                                        <br><br>Hacemos todo de forma casera y procuramos poner siempre un toque personal en nuestro trabajo diario, por eso nuestras pizzas se caracterizan por ser 100% artesanales.
+                                                        <br><br>Podríamos seguir hablando de nosotros, pero mejor te invitamos a que pruebes las ricas y deliciosas pizzas napolitanas que solo LIEVITO te ofrece. Nuestra especialidad son los sentidos, más que las palabras. Alguien dijo que alimentar el cuerpo es una forma de alimentar el alma y no pensamos llevarle la contraria.
+
+
+
+                //- .row.text-center
+                //-     .col-md-4
+                //-         span.fa-stack.fa-4x
+                //-             i.fas.fa-circle.fa-stack-2x.text-primary
+                //-             i.fas.fa-shopping-cart.fa-stack-1x.fa-inverse
+                //-         h4.my-3 Para llevar
+                //-         p.text-muted
+                //-             | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.
+                //-     .col-md-4
+                //-         span.fa-stack.fa-4x
+                //-             i.fas.fa-circle.fa-stack-2x.text-primary
+                //-             i.fas.fa-laptop.fa-stack-1x.fa-inverse
+                //-         h4.my-3 Responsive Design
+                //-         p.text-muted
+                //-             | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.
+                //-     .col-md-4
+                //-         span.fa-stack.fa-4x
+                //-             i.fas.fa-circle.fa-stack-2x.text-primary
+                //-             i.fas.fa-lock.fa-stack-1x.fa-inverse
+                //-         h4.my-3 Web Security
+                //-         p.text-muted
+                //-             | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.
+
+        // Portfolio Grid
+        section#portfolio.page-section.bg-light
+            .container
+                .text-center
+                    h2.section-heading.text-uppercase Nuestros Servicios
+                    h3.section-subheading Conoce nuestros servicios y elige el que más se adapte a ti
+                .row
+                    .col-lg-4.col-sm-6.mb-4
+                        .portfolio-item
+                            a.portfolio-link(data-toggle='modal', href='#portfolioModal1')
+                                .portfolio-hover
+                                    .portfolio-hover-content
+                                        i.fas.fa-plus.fa-3x
+                                img.img-fluid(data-src='assets/img/v/ser1.jpg', class="lazyload", alt='')
+                            .portfolio-caption
+                                .portfolio-caption-heading DELIVERY
+                                .portfolio-caption-subheading.text-muted Nosotros te la llevamos
+                    .col-lg-4.col-sm-6.mb-4
+                        .portfolio-item
+                            a.portfolio-link(data-toggle='modal', href='#portfolioModal2')
+                                .portfolio-hover
+                                    .portfolio-hover-content
+                                        i.fas.fa-plus.fa-3x
+                                img.img-fluid(data-src='assets/img/v/ser2.jpg', class="lazyload", alt='')
+                            .portfolio-caption
+                                .portfolio-caption-heading PICKUP
+                                .portfolio-caption-subheading.text-muted Pasa a recogerla
+                    .col-lg-4.col-sm-6.mb-4
+                        .portfolio-item
+                            a.portfolio-link(data-toggle='modal', href='#portfolioModal3')
+                                .portfolio-hover
+                                    .portfolio-hover-content
+                                        i.fas.fa-plus.fa-3x
+                                img.img-fluid(data-src='assets/img/v/ser3.jpg', class="lazyload", alt='')
+                            .portfolio-caption
+                                .portfolio-caption-heading Pizza Party
+                                .portfolio-caption-subheading.text-muted Catering para eventos
+
+
+                    //- .col-lg-4.col-sm-6.mb-4.mb-lg-0
+                    //-     .portfolio-item
+                    //-         a.portfolio-link(data-toggle='modal', href='#portfolioModal4')
+                    //-             .portfolio-hover
+                    //-                 .portfolio-hover-content
+                    //-                     i.fas.fa-plus.fa-3x
+                    //-             img.img-fluid(src='assets/img/portfolio/04-thumbnail.jpg', alt='')
+                    //-         .portfolio-caption
+                    //-             .portfolio-caption-heading Lines
+                    //-             .portfolio-caption-subheading.text-muted Branding
+                    //- .col-lg-4.col-sm-6.mb-4.mb-sm-0
+                    //-     .portfolio-item
+                    //-         a.portfolio-link(data-toggle='modal', href='#portfolioModal5')
+                    //-             .portfolio-hover
+                    //-                 .portfolio-hover-content
+                    //-                     i.fas.fa-plus.fa-3x
+                    //-             img.img-fluid(src='assets/img/portfolio/05-thumbnail.jpg', alt='')
+                    //-         .portfolio-caption
+                    //-             .portfolio-caption-heading Southwest
+                    //-             .portfolio-caption-subheading.text-muted Website Design
+                    //- .col-lg-4.col-sm-6
+                    //-     .portfolio-item
+                    //-         a.portfolio-link(data-toggle='modal', href='#portfolioModal6')
+                    //-             .portfolio-hover
+                    //-                 .portfolio-hover-content
+                    //-                     i.fas.fa-plus.fa-3x
+                    //-             img.img-fluid(src='assets/img/portfolio/06-thumbnail.jpg', alt='')
+                    //-         .portfolio-caption
+                    //-             .portfolio-caption-heading Window
+                    //-             .portfolio-caption-subheading.text-muted Photography
+
+        // About
+        section#about.page-section
+            .container
+                .text-center
+                    h2.section-heading.text-uppercase Menú
+                    h3.section-subheading.text-muted Nuestra variedad en pizzas.
+                ul.timeline
+
+
+                    li
+                        .timeline-image
+                            img.rounded-circle.img-fluid(data-src='assets/img/p/Artigiano.jpg', class="lazyload", alt='')
+                        .timeline-panel
+                            .timeline-heading
+                                h4 ARTIGIANO
+                                //- h4.subheading Our Humble Beginnings
+                            .timeline-body
+                                p.text-muted
+                                    | Salsa de jitomate, queso mozzarella, jamón serrano, arúgula, queso feta, queso parmesano, AOEV.
+                    li.timeline-inverted
+                        .timeline-image
+                            img.rounded-circle.img-fluid(data-src='assets/img/p/Capressa.jpg', class="lazyload", alt='')
+                        .timeline-panel
+                            .timeline-heading
+                                h4 CAPRESSA
+                                //- h4.subheading An Agency is Born
+                            .timeline-body
+                                p.text-muted
+                                    | Salsa de jitomate, queso mozzarella, jitomates, pesto de albahaca, AOEV.
+
+                    li
+                        .timeline-image
+                            img.rounded-circle.img-fluid(data-src='assets/img/p/Carbonara.jpg', class="lazyload", alt='')
+                        .timeline-panel
+                            .timeline-heading
+                                h4 CARBONARA
+                                //- h4.subheading Transition to Full Service
+                            .timeline-body
+                                p.text-muted
+                                    | Salsa blanca de la casa, queso mozzarella, tocino, queso parmesano.
+                    li.timeline-inverted
+                        .timeline-image
+                            img.rounded-circle.img-fluid(data-src='assets/img/p/ChickenBBQ.jpg', class="lazyload", alt='')
+                        .timeline-panel
+                            .timeline-heading
+                                h4 CHICKEN BBQ
+                                //- h4.subheading Phase Two Expansion
+                            .timeline-body
+                                p.text-muted
+                                    | Salsa de jitomate, queso mozzarella, pechuga de pollo, tocino, salsa BBQ, perejil.
+
+                    li
+                        .timeline-image
+                            img.rounded-circle.img-fluid(data-src='assets/img/p/JamonQueso.jpg', class="lazyload", alt='')
+                        .timeline-panel
+                            .timeline-heading
+                                h4 JAMÓN Y QUESO
+                                //- h4.subheading Transition to Full Service
+                            .timeline-body
+                                p.text-muted
+                                    | Salsa de jitomate, queso mozzarella, jamón, tocino.
+                    li.timeline-inverted
+                        .timeline-image
+                            img.rounded-circle.img-fluid(data-src='assets/img/p/Margherita.jpg', class="lazyload", alt='')
+                        .timeline-panel
+                            .timeline-heading
+                                h4 MARGHERITA
+                                //- h4.subheading Phase Two Expansion
+                            .timeline-body
+                                p.text-muted
+                                    | Salsa de jitomate, queso mozzarella, albahaca, AOEV.
+
+                    li
+                        .timeline-image
+                            img.rounded-circle.img-fluid(data-src='assets/img/p/Mex.jpg', class="lazyload", alt='')
+                        .timeline-panel
+                            .timeline-heading
+                                h4 MEX
+                                //- h4.subheading Transition to Full Service
+                            .timeline-body
+                                p.text-muted
+                                    | Salsa de jitomate, queso mozzarella, tocino, carne molida, chile cuaresmeño, chile de árbol.
+                    li.timeline-inverted
+                        .timeline-image
+                            img.rounded-circle.img-fluid(data-src='assets/img/p/Pastor.jpg', class="lazyload", alt='')
+                        .timeline-panel
+                            .timeline-heading
+                                h4 PASTOR
+                                //- h4.subheading Phase Two Expansion
+                            .timeline-body
+                                p.text-muted
+                                    | Salsa de jitomate, queso mozzarella, cerdo al pastor, perejil, topping de piña.
+
+                    li
+                        .timeline-image
+                            img.rounded-circle.img-fluid(data-src='assets/img/p/Pepperoni.jpg', class="lazyload", alt='')
+                        .timeline-panel
+                            .timeline-heading
+                                h4 PEPPERONI
+                                //- h4.subheading Transition to Full Service
+                            .timeline-body
+                                p.text-muted
+                                    | Salsa de jitomate, queso mozzarella, pepperoni, parmesano.
+                    li.timeline-inverted
+                        .timeline-image
+                            img.rounded-circle.img-fluid(data-src='assets/img/p/Pistacho.jpg', class="lazyload", alt='')
+                        .timeline-panel
+                            .timeline-heading
+                                h4 PISTACHO
+                                //- h4.subheading Phase Two Expansion
+                            .timeline-body
+                                p.text-muted
+                                    | Salsa pesto de base, mortadela, queso stracciatella, queso parmesano, mostaza de la casa, pistacho.
+
+                    li
+                        .timeline-image
+                            img.rounded-circle.img-fluid(data-src='assets/img/p/QuattroFormaggi.jpg', class="lazyload", alt='')
+                        .timeline-panel
+                            .timeline-heading
+                                h4 QUATTRO FORMAGGI
+                                //- h4.subheading Transition to Full Service
+                            .timeline-body
+                                p.text-muted
+                                    | Base de AOEV, queso mozzarella, gorgonzola, feta, parmesano, albahaca, miel.
+                    li.timeline-inverted
+                        .timeline-image
+                            img.rounded-circle.img-fluid(data-src='assets/img/p/SweetPepperoni.jpg', class="lazyload", alt='')
+                        .timeline-panel
+                            .timeline-heading
+                                h4 SWEET PEPPERONI
+                                //- h4.subheading Phase Two Expansion
+                            .timeline-body
+                                p.text-muted
+                                    | Salsa de jitomate, queso mozzarella, pepperoni, chile cuaresmeño, queso feta, topping de mostaza dulce.
+
+
+
+
+                    //- li
+                    //-     .timeline-image
+                    //-         img.rounded-circle.img-fluid(src='assets/img/p/pas.png', alt='')
+                    //-     .timeline-panel
+                    //-         .timeline-heading
+                    //-             h4 CARBONARA
+                    //-             //- h4.subheading Transition to Full Service
+                    //-         .timeline-body
+                    //-             p.text-muted
+                    //-                 | Salsa blanca de la casa, queso mozzarella, tocino, queso parmesano.
+                    li.timeline-inverted
+                        .timeline-image
+                            img.rounded-circle.img-fluid(data-src='assets/img/v/logo.png', class="lazyload", alt='')
+                            h4
+                                | Be Part
+                                br
+                                | Of Our
+                                br
+                                | Story!
+
+        // Team
+        section#team.page-section.bg-light
+            .container
+                .text-center
+                    h2.section-heading.text-uppercase Antojos
+                    //- h3.section-subheading.text-muted Prueba nuestros postres.
+                .row
+                    .col-lg-6
+                        .team-member
+                            img.mx-auto.rounded-circle(data-src='assets/img/p/DeliDetroit.jpg', class="lazyload", alt='')
+                            h4 DELI DETROIT
+                            p.text-muted Masa gruesa y cuadrada, bordes crujientes. <br />Queso mozzarella, pepperoni, salsa de jitomate
+                            //- a.btn.btn-dark.btn-social.mx-2(href='#!')
+                            //-     i.fab.fa-twitter
+                            //- a.btn.btn-dark.btn-social.mx-2(href='#!')
+                            //-     i.fab.fa-facebook-f
+                            //- a.btn.btn-dark.btn-social.mx-2(href='#!')
+                            //-     i.fab.fa-linkedin-in
+                    .col-lg-6
+                        .team-member
+                            img.mx-auto.rounded-circle(data-src='assets/img/p/Donuts.jpg', class="lazyload", alt='')
+                            h4 DONUTS
+                            p.text-muted Dos donas con salsa de jitomate, queso mozzarella, pepperoni y queso parmesano
+                            //- a.btn.btn-dark.btn-social.mx-2(href='#!')
+                            //-     i.fab.fa-twitter
+                            //- a.btn.btn-dark.btn-social.mx-2(href='#!')
+                            //-     i.fab.fa-facebook-f
+                            //- a.btn.btn-dark.btn-social.mx-2(href='#!')
+                            //-     i.fab.fa-linkedin-in
+                    //- .col-lg-4
+                    //-     .team-member
+                    //-         img.mx-auto.rounded-circle(src='assets/img/team/3.jpg', alt='')
+                    //-         h4 Diana Petersen
+                    //-         p.text-muted Lead Developer
+                    //-         a.btn.btn-dark.btn-social.mx-2(href='#!')
+                    //-             i.fab.fa-twitter
+                    //-         a.btn.btn-dark.btn-social.mx-2(href='#!')
+                    //-             i.fab.fa-facebook-f
+                    //-         a.btn.btn-dark.btn-social.mx-2(href='#!')
+                    //-             i.fab.fa-linkedin-in
+                //- .row
+                //-     .col-lg-8.mx-auto.text-center
+                //-         p.large.text-muted
+                //-             | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut eaque, laboriosam veritatis, quos non quis ad perspiciatis, totam corporis ea, alias ut unde.
+
+        //- // Clients
+        //- div.py-5
+        //-     .container
+        //-         .row
+        //-             .col-md-3.col-sm-6.my-3
+        //-                 a(href='#!')
+        //-                     img.img-fluid.d-block.mx-auto(src='assets/img/logos/envato.jpg', alt='')
+        //-             .col-md-3.col-sm-6.my-3
+        //-                 a(href='#!')
+        //-                     img.img-fluid.d-block.mx-auto(src='assets/img/logos/designmodo.jpg', alt='')
+        //-             .col-md-3.col-sm-6.my-3
+        //-                 a(href='#!')
+        //-                     img.img-fluid.d-block.mx-auto(src='assets/img/logos/themeforest.jpg', alt='')
+        //-             .col-md-3.col-sm-6.my-3
+        //-                 a(href='#!')
+        //-                     img.img-fluid.d-block.mx-auto(src='assets/img/logos/creative-market.jpg', alt='')
+
+        // Contact
+        section#contact.page-section
+            .container
+                .text-center
+                    h2.section-heading.text-uppercase Contáctanos
+                    h3.section-subheading Estamos para servirte
+                form#contactForm(name='sentMessage', novalidate='novalidate')
+                    .row.align-items-stretch.mb-5
+                        .col-md-6
+                            .form-group
+                                input#name.form-control(type='text', placeholder='Tu nombre *', required='required', data-validation-required-message='')
+                                p.help-block.text-danger
+                            .form-group
+                                input#email.form-control(type='email', placeholder='Tu correo electrónico *', required='required', data-validation-required-message='')
+                                p.help-block.text-danger
+                            .form-group.mb-md-0
+                                input#phone.form-control(type='tel', placeholder='Tu celular *', required='required', data-validation-required-message='')
+                                p.help-block.text-danger
+                        .col-md-6
+                            .form-group.form-group-textarea.mb-md-0
+                                textarea#message.form-control(placeholder='Mensaje', required='required', data-validation-required-message='')
+                                p.help-block.text-danger
+                    .text-center
+                            #success
+                            button#sendMessageButton.btn.btn-primary.btn-xl.text-uppercase(type='submit') Envíar Mensaje
+
+
+        // Encuéntranos
+        section#findus.page-section.mb-5
+
+            .container
+                .text-center
+                    h2.section-heading.text-uppercase ¡Encuéntranos!
+                    //- h3.section-subheading.text-muted Prueba nuestros postres.
+                .row.h-100
+                    .col-lg-6.h-100
+                        .card
+                            .card-block
+                                h4.card-title.text-center.py-4.title-salmon Mapa
+                                p.card-text.text-center
+                                iframe(data-src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3763.1433018616567!2d-99.16980528509376!3d19.406213386899392!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1ff1532509417%3A0x411e5a826c8cd81f!2sTepic%20143%2C%20Roma%20Sur%2C%20Cuauht%C3%A9moc%2C%2006760%20Ciudad%20de%20M%C3%A9xico%2C%20CDMX!5e0!3m2!1ses-419!2smx!4v1596059076278!5m2!1ses-419!2smx' width='100%' height='300' frameborder='0' style='border:0;' allowfullscreen='' aria-hidden='false' tabindex='0' class="lazyload" title="Mapa a Lievito")
+                            //- img.mx-auto.rounded-circle(src='assets/img/p/DeliDetroit.jpg', alt='')
+                            //- h4 DELI DETROIT
+                            //- p.text-muted Masa gruesa y cuadrada, bordes crujientes. <br />Queso mozzarella, pepperoni, salsa de jitomate
+                            //- a.btn.btn-dark.btn-social.mx-2(href='#!')
+                            //-     i.fab.fa-twitter
+                            //- a.btn.btn-dark.btn-social.mx-2(href='#!')
+                            //-     i.fab.fa-facebook-f
+                            //- a.btn.btn-dark.btn-social.mx-2(href='#!')
+                            //-     i.fab.fa-linkedin-in
+                    .col-lg-6
+                        .card.h-100
+                            .card-block
+                                h4.card-title.text-center.py-4.title-salmon  Dirección <br />
+                                p.card-text.text-muted.text-center
+                                        a(href='https://goo.gl/maps/ZgAJjMT9Bw8cxc4SA' target="_blank") Tepic 143. Col. Roma Sur
+                                        <br />Delegación Cuauhtémoc
+                                        <br />Ciudad de México. C.P. 06760 <br /><br />Teléfono<br />
+                                        a(href='tel:5586762914') (55) 8676-2914
+                                        <br /><br />Correo<br />
+                                        a(href='mailto:hola@pizzalievito.com') hola@pizzalievito.com<br /><br />
+
+
+
+            //- .container
+            //-     .text-center
+            //-         h2.section-heading.text-uppercase
+
+            //-         h3.section-subheading.text-muted.
+
+
+
+        // Footer
+        footer.footer.py-4
+            .container
+                .row.align-items-center
+                    .col-lg-4.text-lg-left
+                        | © Designed by luisfbn
+                    .col-lg-4.my-3.my-lg-0
+                        a.btn.btn-dark.btn-social.mx-2(href='https://twitter.com/pizzalievito' target="_blank")
+                            i.fab.fa-twitter
+                        a.btn.btn-dark.btn-social.mx-2(href='https://www.facebook.com/pizzalievito/' target="_blank")
+                            i.fab.fa-facebook-f
+                        a.btn.btn-dark.btn-social.mx-2(href='https://www.instagram.com/pizzalievito/' target="_blank")
+                            i.fab.fa-instagram
+                    .col-lg-4.text-lg-right
+                        //- a.mr-3(href='#!') Políticas de Privacidad
+                        //- a(href='#!') Términos de Uso
+
+        // Portfolio Modals
+        // Modal 1
+        #portfolioModal1.portfolio-modal.modal.fade(tabindex='-1', role='dialog', aria-hidden='true')
+            .modal-dialog
+                .modal-content
+                    .close-modal(data-dismiss='modal')
+                        img(data-src="assets/img/close-icon.svg", class="lazyload", alt='Close modal')
+                    .container
+                        .row.justify-content-center
+                            .col-lg-10
+                                .modal-body
+                                    // Project Details Go Here
+                                    h2.text-uppercase Deliver
+                                    p.item-intro.text-muted Nosotros te la llevamos.
+                                    img.img-fluid.d-block.mx-auto(data-src='assets/img/v/delivery_i.jpg', class="lazyload", alt='')
+                                    p Entregamos bajo sistema Pre-Order. <br> Nuestro servicio esta disponible de <br />Martes a Domingos de 2:00 p.m. a 11:00 p.m.
+
+                                    p   Para realizar tu pedido dirígete a nuestro
+                                        a(href='https://wa.link/14d3kg' target="_blank") WhatsApp
+
+                                    button.btn.btn-primary(data-dismiss='modal', type='button')
+                                        i.fas.fa-times.mr-1
+                                        | Cerrar
+        // Modal 2
+        #portfolioModal2.portfolio-modal.modal.fade(tabindex='-1', role='dialog', aria-hidden='true')
+            .modal-dialog
+                .modal-content
+                    .close-modal(data-dismiss='modal')
+                        img(data-src="assets/img/close-icon.svg", class="lazyload", alt='Close modal')
+                    .container
+                        .row.justify-content-center
+                            .col-lg-10
+                                .modal-body
+                                    // Project Details Go Here
+                                    h2.text-uppercase Pick Up
+                                    p.item-intro.text-muted Pasa a recoger tu pizza.
+                                    img.img-fluid.d-block.mx-auto(data-src='assets/img/v/pickup_i.jpg', class="lazyload", alt='')
+                                    p Llámanos, programa tu pedido y pasa por el.
+                                        <br><br> <b>Estamos ubicados en:</b>
+                                        <br> Calle Tepic 143. Col. Roma Sur.
+                                        <br> Delegación Cuauhtémoc
+                                        <br> Ciudad de México. C.P. 06760.
+
+
+                                    p   Para realizar tu pedido dirígete a nuestro
+                                        a(href='https://wa.link/14d3kg' target="_blank") WhatsApp
+
+                                    button.btn.btn-primary(data-dismiss='modal', type='button')
+                                        i.fas.fa-times.mr-1
+                                        | Cerrar
+        // Modal 3
+        #portfolioModal3.portfolio-modal.modal.fade(tabindex='-1', role='dialog', aria-hidden='true')
+            .modal-dialog
+                .modal-content
+                    .close-modal(data-dismiss='modal')
+                        img(data-src="assets/img/close-icon.svg", class="lazyload", alt='Close modal')
+                    .container
+                        .row.justify-content-center
+                            .col-lg-10
+                                .modal-body
+                                    // Project Details Go Here
+                                    h2.text-uppercase Pizza Party
+                                    p.item-intro.text-muted Catering para eventos
+                                    img.img-fluid.d-block.mx-auto(data-src='assets/img/v/catering_i.jpg', class="lazyload", alt='')
+                                    p Con Lievito Pizza Party buscamos hacer de tus eventos una velada calida, intima y especial, ofreciendote una experiencia llena de sabores y aromas con solo probar nuestras pizzas artesanales hechas al momento.
+                                    span <b>El servicio Lievito Pizza Party incluye:</b>
+                                    ul.list-inline
+                                        li Horno de piedra
+                                        li Todas las variedades de pizzas
+                                        li Mesa de servicio (estilo buffet)
+                                        li Mesa de ensaladas
+                                        li Servicio de dulces varios
+                                        li Tablitas de madera donde se sirven las pizzas
+                                        li Platos de fibra de bambú
+                                        li Cubiertos biodegradables
+                                        li Toldo 3x3 con luces
+                                        li Mesero
+
+                                    p Contamos con paquetes para 15 personas, 25 personas y más de 30 personas.
+                                        <br><br> CUÉNTANOS LO QUE NECESITAS
+                                        <br> Y te ofreceremos opciones adaptadas a tu evento
+                                        a(href='https://wa.link/14d3kg' target="_blank") aquí
+
+                                    button.btn.btn-primary(data-dismiss='modal', type='button')
+                                        i.fas.fa-times.mr-1
+                                        | Cerrar
+
+
+        // Bootstrap core JS
+        script(src='assets/vendor/jquery.min.js')
+        script(src='assets/vendor/bootstrap.bundle.min.js')
+
+        // Third party plugin JS
+        script(src='assets/vendor/jquery.easing.min.js')
+
+        // Contact form JS
+        script(src='assets/mail/jqBootstrapValidation.js')
+        script(src='assets/mail/contact_me.js')
+
+        // Core theme JS
+        script(src='js/scripts.js')
+        //- script(src='js/mess.js')
+
+        // Firebase
+        //- script(src='/__/firebase/7.16.1/firebase-app.js')
+        //- script(src='/__/firebase/init.js')
